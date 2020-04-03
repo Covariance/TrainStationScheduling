@@ -16,7 +16,7 @@ public class OptimizedSolver implements Solver {
 
         @Override
         public int compareTo(Event event) {
-            return (this.time == event.time) ? ((this.isArrival && !event.isArrival) ? -1 : 1)
+            return (this.time == event.time) ? ((this.isArrival && !event.isArrival) ? 1 : -1)
                     : ((this.time < event.time) ? -1 : 1);
         }
 

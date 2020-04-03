@@ -19,10 +19,6 @@ public class Train {
         return arrival;
     }
 
-    public double getUnloading() {
-        return unloading;
-    }
-
     public double getUnloadingEnd() {
         return arrival + unloading;
     }
