@@ -31,7 +31,7 @@ public class Train {
         return payment;
     }
 
-    public Train parseTrain(String input) {
+    public static Train parseTrain(String input) {
         String[] splitInput = input.split(" ");
         if (splitInput.length != 4) {
             throw new ClassFormatError("Cannot parse train: " + input);
