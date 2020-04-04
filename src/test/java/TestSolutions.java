@@ -70,7 +70,6 @@ public class TestSolutions {
     }
 
     @Test
-    @Ignore
     public void manualTest() {
         testsFromList(
                 List.of(
@@ -104,7 +103,6 @@ public class TestSolutions {
     }
 
     @Test
-    @Ignore
     public void randomBigTests() {
         Random rand = new Random();
         Solver optimized = new OptimizedSolver();
