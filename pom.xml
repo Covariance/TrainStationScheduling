@@ -38,7 +38,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
-                    <mainClass>Main</mainClass>
+                    <mainClass>ru.covariance.jbintern.Main</mainClass>
                 </configuration>
             </plugin>
 
@@ -49,7 +49,7 @@
                 <version>3.1.2</version>
                 <configuration>
                     <finalName>
-                        train-station-scheduling
+                        FinalSolution
                     </finalName>
                     <outputDirectory>
                         .
@@ -57,7 +57,7 @@
                     <archive>
                         <manifest>
                             <!-- Jar file entry point -->
-                            <mainClass>Main</mainClass>
+                            <mainClass>ru.covariance.jbintern.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
