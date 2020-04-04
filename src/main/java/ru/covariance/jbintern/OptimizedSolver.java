@@ -1,3 +1,5 @@
+package ru.covariance;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -8,7 +10,7 @@ public class OptimizedSolver implements Solver {
         public final boolean isArrival;
         public final int train;
 
-        public Event(double time, boolean isArrival, int train) {
+        public Event(final double time, final boolean isArrival, final int train) {
             this.time = time;
             this.isArrival = isArrival;
             this.train = train;
@@ -16,7 +18,7 @@ public class OptimizedSolver implements Solver {
 
         @Override
         public int compareTo(Event event) {
-            return (this.time == event.time) ? ((this.isArrival && !event.isArrival) ? 1 : -1)
+            return (this.time == event.time) ? (this.isArrival ? 1 : -1)
                     : ((this.time < event.time) ? -1 : 1);
         }
 
@@ -29,6 +31,9 @@ public class OptimizedSolver implements Solver {
     @Override
     public Solution solve(List<Train> schedule) {
         int n = schedule.size();
+        if (n == 0) {
+            return new Solution(0., List.of());
+        }
         List<Event> events = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             events.add(new Event(schedule.get(i).getArrival(), true, i));

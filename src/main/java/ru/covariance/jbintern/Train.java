@@ -1,3 +1,5 @@
+package ru.covariance;
+
 public class Train {
     private final int ID;
     private final double arrival;
