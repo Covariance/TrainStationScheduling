@@ -1,4 +1,4 @@
-package ru.covariance.jbintern;
+package perfomance;
 
 import ru.covariance.jbintern.NaiveSolver;
 import ru.covariance.jbintern.OptimizedSolver;
