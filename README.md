@@ -57,8 +57,8 @@
    2. Выполнить команду `mvn -q compile exec:java 2>/dev/null` (STDERR можно и не перенаправлять,
    но при определённых условиях **Maven** может выдавать `WARNING: An illegal reflective access operation has occurred`).
    3. Также можно выполнить встроенные тесты при помощи команды `mvn test`.
-2) Запустить скомпилированный файл `train-station-scheduling` при помощи команды `java -jar
-train-station-scheduling`.
+2) Запустить скомпилированный файл `FinalSolution` при помощи команды `java -jar
+FinalSolution`.
 
 ## Описание решения
 
