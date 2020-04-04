@@ -1,4 +1,4 @@
-package ru.covariance;
+package ru.covariance.jbintern;
 
 import java.io.BufferedReader;
 import java.io.IOException;

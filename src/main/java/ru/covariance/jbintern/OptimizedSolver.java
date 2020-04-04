@@ -1,4 +1,4 @@
-package ru.covariance;
+package ru.covariance.jbintern;
 
 import java.util.ArrayList;
 import java.util.Collections;

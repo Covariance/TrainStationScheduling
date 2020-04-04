@@ -1,4 +1,4 @@
-package ru.covariance;
+package ru.covariance.jbintern;
 
 public class Train {
     private final int ID;
