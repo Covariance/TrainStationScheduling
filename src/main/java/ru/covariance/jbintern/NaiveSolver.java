@@ -5,7 +5,16 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * Naive implementation of Solver interface, that provides solution for given problem
+ * in a O(n^2) of time and O(n) of memory
+ */
 public class NaiveSolver implements Solver {
+    /**
+     * Solves the problem for given schedule.
+     * @param schedule {List<Train>} Schedule of trains
+     * @return Solution for the given schedule
+     */
     @Override
     public Solution solve(List<Train> schedule) {
         schedule.sort(Comparator.comparingDouble(Train::getArrival));

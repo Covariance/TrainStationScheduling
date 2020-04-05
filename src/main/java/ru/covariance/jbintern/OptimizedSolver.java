@@ -4,8 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Naive implementation of Solver interface, that provides solution for given problem
+ * in a O(n*log(n)) of time and O(n) of memory
+ */
 public class OptimizedSolver implements Solver {
-    static class Event implements Comparable<Event> {
+    private static class Event implements Comparable<Event> {
         public final double time;
         public final boolean isArrival;
         public final int train;
@@ -28,6 +32,11 @@ public class OptimizedSolver implements Solver {
         }
     }
 
+    /**
+     * Solves the problem for given schedule.
+     * @param schedule {List<Train>} Schedule of trains
+     * @return Solution for the given schedule
+     */
     @Override
     public Solution solve(List<Train> schedule) {
         int n = schedule.size();
